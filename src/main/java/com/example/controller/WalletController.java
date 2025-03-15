@@ -4,6 +4,7 @@ import com.example.modal.Order;
 import com.example.modal.User;
 import com.example.modal.Wallet;
 import com.example.modal.WalletTransaction;
+import com.example.service.OrderService;
 import com.example.service.UserService;
 import com.example.service.WalletService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,9 @@ public class WalletController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private OrderService orderService;
 
 
     @GetMapping("/api/wallet")
